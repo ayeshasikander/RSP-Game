@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 230, 215);
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vw;
+    position: relative;
+    z-index: 2;
+}
+
+.header h1 {
+    color: #0b0733;
+}
+
+.container {
+    height: 88vh;
+    width: 80%;
+    background-color: #0b0733;
+    box-shadow: rgba(0, 0, 0, 0.473) 0px 2px 4px,
+        rgba(0, 0, 0, 0.425) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.479) 0px -3px 0px inset;
+    border: wheat 4px solid;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    padding: 2vw;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.score {
+    font-size: 46px;
+    font-weight: 600;
+    margin: 2vw auto;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2vw 2vw;
+    position: relative;
+}
+
+.badge {
+    font-size: 2vw;
+    padding: 0.2vw 1vw;
+    background-color: red;
+    position: absolute;
+    top: 5%;
+}
+
+#user {
+    left: -10%;
+}
+
+#computer {
+    right: -10%;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.choice {
+    display: inline-block;
+    border: #1d1c1c56 2px solid;
+    border-radius: 50%;
+    padding: 0.2vw;
+    margin: 0.5vw;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #0b0733;
+    box-shadow: rgba(0, 0, 0, 0.473) 0px 2px 4px,
+        rgba(0, 0, 0, 0.425) 0px 7px 13px -3px,
+        rgba(255, 253, 253, 0.479) 0px -3px 0px inset;
+}
+
+.choice img {
+    height: 100px;
+    width: 100px;
+}
+
+.message{
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        left: 0%;
+        top: 8%;
+    }
+
+    .score {
+        width: 300px;
+    }
+
+    .badge {
+        font-size: 3vw;
+    }
+
+    .result {
+        text-align: center;
+        font-weight: 200;
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        left: 0%;
+        top: 8%;
+    }
+
+    .score {
+        width: 200px;
+    }
+
+    .badge {
+        font-size: 5vw;
+        padding: 1vw;
+    }
+
+    .result {
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 400;
+        padding: 2vw;
+    }
+
+    .choice img {
+        height: 60%;
+        width: 60px;
+    }
+}

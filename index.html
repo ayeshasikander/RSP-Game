@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon_io (2)/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock,Paper,Scissors Game</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Rock, Paper, Scissors</h1>
+        </div>
+        <div class="container">
+            <div class="score">
+                <div id="user" class="badge">user</div>
+                <div id="computer" class="badge">Jack</div>
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+            <div class="result">
+                <p>Paper covers Rock, You win!</p>
+            </div>
+
+            <div class="choices">
+                <div class="choice" id="paper">
+                    <img src="./favicon_io (2)/paper.png" alt="">
+                </div>
+
+                <div class="choice" id="rock">
+                    <img src="./favicon_io (2)/rock.png" alt="">
+                </div>
+                
+                <div class="choice" id="scissor">
+                    <img src="./favicon_io (2)/scissor.png" alt="">
+                </div>
+            </div>
+            <p id="message">Make your move</p>
+        </div>
+    </div>
+<audio id="win" src="./favicon_io (2)/win.mpeg"></audio>
+<audio id="lost" src="./favicon_io (2)/lost.mpeg"></audio>
+<audio id="draw" src="./favicon_io (2)/draw.mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
