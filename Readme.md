@@ -2,6 +2,7 @@
 
 Welcome to the Rock, Paper, Scissors game! This simple and fun web-based game was created using HTML, CSS, and JavaScript. Challenge the computer and see if you can emerge victorious in this classic showdown of rock, paper, and scissors! 🎮
 
+
 ## How to Play 🕹️
 
 1. Clone this repository to your local machine.
@@ -34,7 +35,9 @@ The JavaScript file (`script.js`) handles the game logic. It generates a random 
 
 
 
-## Preview 📸
+## Preview 📸  [Live Link](https://rock-paper-scissor-app-ok.netlify.app/)
+
+
 
 ![Rock, Paper, Scissors Game](/Rock-Paper-Scissors-Game.png)
 
